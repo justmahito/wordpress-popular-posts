@@ -230,7 +230,7 @@ class Admin {
         global $wpdb;
 
         // Upgrade flag
-        add_option('wpp_update', $now);
+        add_option('wpp_update', $now, false, false);
 
         // Set table name
         $prefix = $wpdb->prefix . "popularposts";
